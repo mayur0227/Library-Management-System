@@ -1,0 +1,128 @@
+SQL> desc library;
+ Name                                                                                                              Null?    Type
+ ---------------------------------------------------------------------------------------------------
+ LIBRARY_ID                                                                                                        NOT NULL NUMBER(3)
+ NAME                                                                                                              NOT NULL VARCHAR2(25)
+ ADDRESS                                                                                                           NOT NULL VARCHAR2(35)
+ CONTACT_NO                                                                                                                 NUMBER(10)
+
+SQL> INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO);
+Enter value for library_id: A1
+Enter value for name: 'ARYA'
+Enter value for address: 'AKOLE'
+Enter value for contact_no: 7894561562
+old   1: INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO)
+new   1: INSERT INTO LIBRARY VALUES(A1, 'ARYA', 'AKOLE', 7894561562)
+INSERT INTO LIBRARY VALUES(A1, 'ARYA', 'AKOLE', 7894561562)
+                           *
+ERROR at line 1:
+ORA-00984: column not allowed here
+
+
+SQL> ALTER TABLE LIBRARY
+  2  MODIFY LIBRARY_ID CHAR(3);
+MODIFY LIBRARY_ID CHAR(3)
+       *
+ERROR at line 2:
+ORA-02267: column type incompatible with referenced column type
+
+
+SQL> INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO);
+Enter value for library_id: 10
+Enter value for name: 'ARYA'
+Enter value for address: 'AKOLE'
+Enter value for contact_no: 7895463210
+old   1: INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO)
+new   1: INSERT INTO LIBRARY VALUES(10, 'ARYA', 'AKOLE', 7895463210)
+
+1 row created.
+
+SQL> /
+Enter value for library_id: 11
+Enter value for name: 'YASHOGATHA'
+Enter value for address: 'SANGAMNER'
+Enter value for contact_no: 2566314789
+old   1: INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO)
+new   1: INSERT INTO LIBRARY VALUES(11, 'YASHOGATHA', 'SANGAMNER', 2566314789)
+
+1 row created.
+
+SQL> /
+Enter value for library_id: 12
+Enter value for name: 'YATHARTHI'
+Enter value for address: 'PUNE'
+Enter value for contact_no: 8529413670
+old   1: INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO)
+new   1: INSERT INTO LIBRARY VALUES(12, 'YATHARTHI', 'PUNE', 8529413670)
+
+1 row created.
+
+SQL> /
+Enter value for library_id: 13
+Enter value for name: 'STUDYROOM'
+Enter value for address: 'SINNAR'
+Enter value for contact_no: 7415632895
+old   1: INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO)
+new   1: INSERT INTO LIBRARY VALUES(13, 'STUDYROOM', 'SINNAR', 7415632895)
+
+1 row created.
+
+SQL> /
+Enter value for library_id: 14
+Enter value for name: 'AGODHA'
+Enter value for address: 'NASHIK'
+Enter value for contact_no: 7854196358
+old   1: INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO)
+new   1: INSERT INTO LIBRARY VALUES(14, 'AGODHA', 'NASHIK', 7854196358)
+
+1 row created.
+
+SQL> /
+Enter value for library_id: 15
+Enter value for name: 'CHANAKYA'
+Enter value for address: 'HADAPSER'
+Enter value for contact_no: 2635417856
+old   1: INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO)
+new   1: INSERT INTO LIBRARY VALUES(15, 'CHANAKYA', 'HADAPSER', 2635417856)
+
+1 row created.
+
+SQL> /
+Enter value for library_id: 16
+Enter value for name: 'KALAM'
+Enter value for address: 'MUMBAI'
+Enter value for contact_no: 3562149563
+old   1: INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO)
+new   1: INSERT INTO LIBRARY VALUES(16, 'KALAM', 'MUMBAI', 3562149563)
+
+1 row created.
+
+SQL> /
+Enter value for library_id: 17
+Enter value for name: 'GANDHI'
+Enter value for address: 'DELHI'
+Enter value for contact_no: 7459682315
+old   1: INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO)
+new   1: INSERT INTO LIBRARY VALUES(17, 'GANDHI', 'DELHI', 7459682315)
+
+1 row created.
+
+SQL> /
+Enter value for library_id: 18
+Enter value for name: 'AASTHA'
+Enter value for address: 'PUNE'
+Enter value for contact_no: 5462398712
+old   1: INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO)
+new   1: INSERT INTO LIBRARY VALUES(18, 'AASTHA', 'PUNE', 5462398712)
+
+1 row created.
+
+SQL> /
+Enter value for library_id: 19
+Enter value for name: 'ABHYASIKA'
+Enter value for address: 'AKOLE'
+Enter value for contact_no: 6548972358
+old   1: INSERT INTO LIBRARY VALUES(&LIBRARY_ID, &NAME, &ADDRESS, &CONTACT_NO)
+new   1: INSERT INTO LIBRARY VALUES(19, 'ABHYASIKA', 'AKOLE', 6548972358)
+
+1 row created.

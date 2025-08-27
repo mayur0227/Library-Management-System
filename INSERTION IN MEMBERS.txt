@@ -1,0 +1,152 @@
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+DEPT                           TABLE
+EMP                            TABLE
+BONUS                          TABLE
+SALGRADE                       TABLE
+CUSTOMERS                      TABLE
+ORDERS                         TABLE
+M                              TABLE
+STD1                           TABLE
+STD                            TABLE
+V1                             VIEW
+TEACHER                        TABLE
+COURSE                         TABLE
+E1                             TABLE
+STUDENT                        TABLE
+BOOKS                          TABLE
+MEMBERS                        TABLE
+LIBRARIANS                     TABLE
+LIBRARY                        TABLE
+BORROWINGS                     TABLE
+LIB                            TABLE
+V_ON_S                         VIEW
+S                              TABLE
+
+22 rows selected.
+
+SQL> SELECT * FROM LIBRARY;
+
+no rows selected
+
+SQL> SELECT * FROM MEMBERS;
+
+no rows selected
+
+SQL> INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE);
+Enter value for member_id: 101
+Enter value for name: 'MAYUR'
+Enter value for email: mayur@gmail.com
+Enter value for phone: 9876543210
+old   1: INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE)
+new   1: INSERT INTO MEMBERS VALUES(101, 'MAYUR', mayur@gmail.com, 9876543210)
+INSERT INTO MEMBERS VALUES(101, 'MAYUR', mayur@gmail.com, 9876543210)
+*
+ERROR at line 1:
+ORA-04054: database link GMAIL.COM does not exist
+
+
+SQL> /
+Enter value for member_id: 101
+Enter value for name: 'Mayur'
+Enter value for email: 'mayur@gmail.com'
+Enter value for phone: 9876543210
+old   1: INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE)
+new   1: INSERT INTO MEMBERS VALUES(101, 'Mayur', 'mayur@gmail.com', 9876543210)
+
+1 row created.
+
+SQL> /
+Enter value for member_id: 102
+Enter value for name: 'Varsha'
+Enter value for email: 'varsha@gmail.com'
+Enter value for phone: 9874561238
+old   1: INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE)
+new   1: INSERT INTO MEMBERS VALUES(102, 'Varsha', 'varsha@gmail.com', 9874561238)
+
+1 row created.
+
+SQL> /
+Enter value for member_id: 103
+Enter value for name: 'Ashish'
+Enter value for email: 'ashish@gmail.com'
+Enter value for phone: 8527419635
+old   1: INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE)
+new   1: INSERT INTO MEMBERS VALUES(103, 'Ashish', 'ashish@gmail.com', 8527419635)
+
+1 row created.
+
+SQL> /
+Enter value for member_id: 104
+Enter value for name: 'Nayana'
+Enter value for email: 'nayana@gmail.com'
+Enter value for phone: 9632587418
+old   1: INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE)
+new   1: INSERT INTO MEMBERS VALUES(104, 'Nayana', 'nayana@gmail.com', 9632587418)
+
+1 row created.
+
+SQL> /
+Enter value for member_id: 105
+Enter value for name: 'Anjali'
+Enter value for email: 'anjali@gmail.com'
+Enter value for phone: 7418529632
+old   1: INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE)
+new   1: INSERT INTO MEMBERS VALUES(105, 'Anjali', 'anjali@gmail.com', 7418529632)
+
+1 row created.
+
+SQL> /
+Enter value for member_id: 107
+Enter value for name: 'Athrva'
+Enter value for email: 'atharva@gmail.com'
+Enter value for phone: 7891234565
+old   1: INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE)
+new   1: INSERT INTO MEMBERS VALUES(107, 'Athrva', 'atharva@gmail.com', 7891234565)
+
+1 row created.
+
+SQL> /
+Enter value for member_id: 106
+Enter value for name: 'Dadaso'
+Enter value for email: 'dadaso@gmail.com'
+Enter value for phone: 7892563147
+old   1: INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE)
+new   1: INSERT INTO MEMBERS VALUES(106, 'Dadaso', 'dadaso@gmail.com', 7892563147)
+
+1 row created.
+
+SQL> /
+Enter value for member_id: 108
+Enter value for name: 'sanket'
+Enter value for email: 'sanket@gmail.com'
+Enter value for phone: 7854129653
+old   1: INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE)
+new   1: INSERT INTO MEMBERS VALUES(108, 'sanket', 'sanket@gmail.com', 7854129653)
+
+1 row created.
+
+SQL> /
+Enter value for member_id: 109
+Enter value for name: 'Rajesh'
+Enter value for email: 'rajesh@gmail.com'
+Enter value for phone: 9856213470
+old   1: INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE)
+new   1: INSERT INTO MEMBERS VALUES(109, 'Rajesh', 'rajesh@gmail.com', 9856213470)
+
+1 row created.
+
+SQL> /
+Enter value for member_id: 110
+Enter value for name: 'Satyam'
+Enter value for email: 'satyam@gmail.com'
+Enter value for phone: 8745211369
+old   1: INSERT INTO MEMBERS VALUES(&MEMBER_ID, &NAME, &EMAIL, &PHONE)
+new   1: INSERT INTO MEMBERS VALUES(110, 'Satyam', 'satyam@gmail.com', 8745211369)
+
+1 row created.
+
+SQL> commit;
+
+Commit complete.

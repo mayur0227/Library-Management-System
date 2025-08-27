@@ -1,0 +1,147 @@
+SQL> DESC BOOKS;
+ Name                                                                                                              Null?    Type
+ ---------------------------------------------------------------------------------------------------
+ BOOK_ID                                                                                                           NOT NULL NUMB
+ TITLE                                                                                                             NOT NULL VARC
+ ATHOUR                                                                                                            NOT NULL VARC
+ GENRE                                                                                                             NOT NULL VARC
+ PUBLISHED_YEAR                                                                                                             CHAR
+ LIBRARY_ID                                                                                                                 NUMB
+
+SQL> INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID);
+Enter value for book_id: 1
+Enter value for title: 'DSA'
+Enter value for athour: 'RAGHU RAMAKRISHNAN'
+Enter value for genre: 'DATABASE'
+Enter value for published_year: 2017
+Enter value for library_id: 10
+old   1: INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID)
+new   1: INSERT INTO BOOKS VALUES(1, 'DSA', 'RAGHU RAMAKRISHNAN', 'DATABASE', 2017, 10)
+
+1 row created.
+
+SQL> 
+SQL> /
+Enter value for book_id: 2
+Enter value for title: 'CLOUD COMP'
+Enter value for athour: 'RAJKUMAR BUYYA'
+Enter value for genre: 'TECHNOLOGY'
+Enter value for published_year: 2022
+Enter value for library_id: 16
+old   1: INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID)
+new   1: INSERT INTO BOOKS VALUES(2, 'CLOUD COMP', 'RAJKUMAR BUYYA', 'TECHNOLOGY', 2022, 16)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: 3
+Enter value for title: 'MOBY DICK'
+Enter value for athour: 'HERMAN MELVILLE'
+Enter value for genre: 'ADVENTURE'
+Enter value for published_year: 1869
+Enter value for library_id: 14
+old   1: INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID)
+new   1: INSERT INTO BOOKS VALUES(3, 'MOBY DICK', 'HERMAN MELVILLE', 'ADVENTURE', 1869, 14)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: 4
+Enter value for title: 'THE HABBIT'
+Enter value for athour: 'J TOLKIEN'
+Enter value for genre: 'FANTASY'
+Enter value for published_year: 1937
+Enter value for library_id: 19
+old   1: INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID)
+new   1: INSERT INTO BOOKS VALUES(4, 'THE HABBIT', 'J TOLKIEN', 'FANTASY', 1937, 19)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: 5
+Enter value for title: 'PRIDE AND PREJUDICE'
+Enter value for athour: 'JANE AUSTEN'
+Enter value for genre: 'ROMANCE'
+Enter value for published_year: 1813
+Enter value for library_id: 13
+old   1: INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID)
+new   1: INSERT INTO BOOKS VALUES(5, 'PRIDE AND PREJUDICE', 'JANE AUSTEN', 'ROMANCE', 1813, 13)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: 6
+Enter value for title: 'ROMIO & JULIET'
+Enter value for athour: 'WILLIAM SHAKESPERE'
+Enter value for genre: 'ROMANCE'
+Enter value for published_year: 1813
+Enter value for library_id: 18
+old   1: INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID)
+new   1: INSERT INTO BOOKS VALUES(6, 'ROMIO & JULIET', 'WILLIAM SHAKESPERE', 'ROMANCE', 1813, 18)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: 7
+Enter value for title: 'HARRY POTTER'
+Enter value for athour: 'J. K. ROWLING'
+Enter value for genre: 'FANTASY'
+Enter value for published_year: 1997
+Enter value for library_id: 17
+old   1: INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID)
+new   1: INSERT INTO BOOKS VALUES(7, 'HARRY POTTER', 'J. K. ROWLING', 'FANTASY', 1997, 17)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: 8
+Enter value for title: 'TREASURE ISLAND'
+Enter value for athour: 'R. L. STEVENSON'
+Enter value for genre: 'ADVENTURE'
+Enter value for published_year: 1883
+Enter value for library_id: 11
+old   1: INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID)
+new   1: INSERT INTO BOOKS VALUES(8, 'TREASURE ISLAND', 'R. L. STEVENSON', 'ADVENTURE', 1883, 11)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: 9
+Enter value for title: JOURNEY CENTER EARTH
+Enter value for athour: 
+Enter value for genre: 
+Enter value for published_year: 
+Enter value for library_id: 
+old   1: INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID)
+new   1: INSERT INTO BOOKS VALUES(9, JOURNEY CENTER EARTH, , , , )
+INSERT INTO BOOKS VALUES(9, JOURNEY CENTER EARTH, , , , )
+                                    *
+ERROR at line 1:
+ORA-00917: missing comma
+
+
+SQL> /
+Enter value for book_id: 9
+Enter value for title: ' JOURNEY CENTER EARTH'
+Enter value for athour: 'JULES VERNE'
+Enter value for genre: 'ADVENTURE'
+Enter value for published_year: 1864
+Enter value for library_id: 19
+old   1: INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID)
+new   1: INSERT INTO BOOKS VALUES(9, ' JOURNEY CENTER EARTH', 'JULES VERNE', 'ADVENTURE', 1864, 19)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: 10
+Enter value for title: 'CLEAN CODE'
+Enter value for athour: 'ROBERT C. MARTIN'
+Enter value for genre: 'TECHNOLOGY'
+Enter value for published_year: 2008
+Enter value for library_id: 13
+old   1: INSERT INTO BOOKS VALUES(&BOOK_ID, &TITLE, &ATHOUR, &GENRE, &PUBLISHED_YEAR, & LIBRARY_ID)
+new   1: INSERT INTO BOOKS VALUES(10, 'CLEAN CODE', 'ROBERT C. MARTIN', 'TECHNOLOGY', 2008, 13)
+
+1 row created.
+
+SQL> 
